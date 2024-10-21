@@ -1,0 +1,50 @@
+<!-- Moisés Acevedo Trillos 0222020041
+Estevan David martinez perez 0222120032
+Ronald David Roman Valdes 0222120010
+Alejandro Betancur Barrios 0222120041 -->
+
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+	<script src="scripts.js"></script>
+	<title>POO Proyecto Final </title>
+</head>
+
+<body style="background: #1A1A1B;  overflow: hidden;"> 
+
+	<header>
+		<div class="container__menu">
+			<div class="menu">
+				<nav>
+					<ul>
+						<li><button class="botones">Opciones</button>
+							<ul>
+								<li><a onclick="actualizarPagina()" href="#">Nuevo modelo</a></li>
+								<li><a onclick="guardarDatos()" href="#">Guardar modelo</a></li>
+								<li><a onclick="cargarDatos()"href="#">Abrir modelo</a></li>
+								<input type="file" id="archivoEntrada" accept=".txt">
+								<li><a onclick="cerrarPagina()"href="#">Cerrar aplicacion</a></li>
+							</ul>	
+						</li>
+						<li><button id="eliminarNodoBtn" class="botones">Eliminar nodos</button></li>
+						<li><button onclick="eliminarArco()" class="botones">Eliminar arcos</button></li>
+						<li><button onclick="editarPesoArco()" class="botones">Editar</button></li>
+						<li><button id="moverNodoBtn" class="botones">Mover</button></li>
+					</ul>
+				</nav>
+			</div>
+			
+		</div>
+	</header>
+
+	<!-- Tamaño canvas -->
+	<canvas id="myCanvas" width="2000px" height="800px"></canvas>
+</body>
+</html>
